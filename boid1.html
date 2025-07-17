@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Boids Algorithm - Fish School</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="info">
+        <div>🐠 Boids Algorithm - Fish School</div>
+        <div>Leader: <span style="color: #ff6b35;">🐟 Alpha Fish</span></div>
+        <div>School: <span id="followerCount">24</span> fish</div>
+        <div>Depth: <span id="currentDepth">15m</span></div>
+    </div>
+    
+    <div id="controls">
+        <button onclick="addFish()">Aumentar peces (+)</button>
+        <button onclick="removeFish()">Restar Peces (-)</button>
+        <button onclick="togglePause()">Pause/Play</button>
+        <button onclick="resetSchool()">Resetear</button>
+        <button onclick="togglePredator()">Tiburon</button>
+        <div>
+            <span style="color: #ff6b35;">- INTEGRANTES DEL GRUPO:</span>
+        </div>
+        <div> - <span style="color: #bdd5c6;">🐟 JHON CLINTON LAYME MAQUERA</span></div>
+        <div> - <span style="color: #bdd5c6;">🐟 GIAN MARCO APAZA CENTENO</span></div>
+        <div> - <span style="color: #bdd5c6;">🐟 FRANCO ABONDANSHERI ARELA MAMANI</span></div>
+        <div> - <span style="color: #bdd5c6;">🐟 JOSEPH HENRY HIDALGO NEIRA</span></div>
+    </div>
+    
+    <div id="depth-indicator">
+        <div>Surface &larr; &rarr; Deep Ocean</div>
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/animation/AnimationMixer.js"></script>
+    <script src="boid1.js"></script>
+</body>
+</html>
